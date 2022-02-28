@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      #tapLes {
+          position: absolute;
+          border: 1px #ddd solid;
+          width: 656px;
+          height: 474px;
+      }
+
+      }
+     tr td {
+          width: 170px;
+          height: 10px;
+          border: 1px solid;
+      }
+    </style>
+</head>
+<body>
+<table id="tapLes">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</body>
+<script>
+    // loop:forEach()
+    // let  doubkills = [
+    //     {
+    //         id : 1,
+    //         name : "anhtay",
+    //         address: "HaNoi",
+    //     },
+    //     {
+    //         id2: 2,
+    //         name: "LinhN",
+    //         address: "TT",
+    //     }
+    // ]
+    // doubkills.forEach(function (doubkills) {
+    //     console.log(doubkills)
+    // })
+
+    // lopp For-of
+    // let flo = "angikhonthe"
+    // for (let f of flo) {
+    //     console.log(f)
+    // }
+
+    // loop For-in
+    // let hacked = {firtsName: "Dang", lastName: "Tayman", address: "HaNoi"}
+    // for (let  h in  hacked) {
+    //     console.log(hacked[h]);
+    // }
+
+    // let x = 1;
+    // for (let i = 0; i < -1; i = i + 2) {
+    //     x = x + 1;
+    // }
+    // console.log(x);
+    let couunTing;
+        couunTing = "<table border='1' width='500' position='apbsolut' cellspacing='2' cellpadding='4'";
+        couunTing = couunTing + "<tr>";
+    for (i = 2; i <= 9; i++) {
+        document.write("</br></br> ")
+
+
+        for (j = 1; j <= 9; j++) {
+            couunTing = couunTing + "<td>" + " " + "</td>";
+            document.write( '   &nbsp'+i + 'x' + j + '= &nbsp' + i*j +' ;' )
+            document.write("\t");
+        }
+        couunTing = couunTing + "</tr>";
+        document.write("</br>")
+    }
+    couunTing = couunTing + "</table>";
+
+
+    document.getElementById('tapLes').innerHTML = couunTing;
+    // thử dùng vòng lặp While
+
+
+</script>
+</html>

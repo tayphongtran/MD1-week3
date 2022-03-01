@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    // take input from the user
+    // const number = parseInt(prompt("Enter a positive number: "));
+    // let isPrime = true;
+    //
+    // // check if number is equal to 1
+    // if (number === 1) {
+    //     console.log("1 is neither prime nor composite number.");
+    // } else if (number > 1) {
+    //
+    //     // looping through 2 to number-1
+    //     for (let i = 2; i < number; i++) {
+    //         if (number % i == 0) {
+    //             isPrime = false;
+    //             break;
+    //         }
+    //     }
+    //
+    //     if (isPrime) {
+    //         console.log(`${number} is a prime number`);
+    //     } else {
+    //         console.log(`${number} is a not prime number`);
+    //     }
+    // }
+
+
+    let numbers = +prompt('nhập số zô:');
+    let count = 0;
+    for (let i = 2; count < numbers; i++) {
+        console.log('in i =============', i)
+        let check = true;
+
+        for (let j = 2; j < i; j++) {
+            if (i % j == 0) {
+                console.log('check ===============j',j)
+                console.log('check ==============i', i)
+                check = false;
+                break;
+            }
+        }
+        if (check) {
+            count++;
+            document.write(i + ' ')
+        }
+    }
+
+
+</script>

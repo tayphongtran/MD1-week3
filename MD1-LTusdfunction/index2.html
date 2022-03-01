@@ -3,124 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-      #tapLes {
-          position: absolute;
-          border: 1px #ddd solid;
-          width: 656px;
-          height: 474px;
-      }
 
-      }
-     tr td {
-          width: 170px;
-          height: 10px;
-          border: 1px solid;
-      }
-    </style>
+
 </head>
 <body>
-<table id="tapLes">
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
+
 </body>
 <script>
     // loop:forEach()
@@ -157,25 +44,18 @@
     //     x = x + 1;
     // }
     // console.log(x);
-    let couunTing;
-        couunTing = "<table border='1' width='500' position='apbsolut' cellspacing='2' cellpadding='4'";
-        couunTing = couunTing + "<tr>";
+    let couunTing = '<table border="1"';
+    couunTing += '</tr>'
     for (i = 2; i <= 9; i++) {
-        document.write("</br></br> ")
-
-
         for (j = 1; j <= 9; j++) {
-            couunTing = couunTing + "<td>" + " " + "</td>";
-            document.write( '   &nbsp'+i + 'x' + j + '= &nbsp' + i*j +' ;' )
-            document.write("\t");
+            couunTing += "<td>"+i + " *" + j + '=' + i*j + "</td>";
         }
-        couunTing = couunTing + "</tr>";
-        document.write("</br>")
+        couunTing += "</tr>";
     }
-    couunTing = couunTing + "</table>";
+    couunTing += "</table>";
 
 
-    document.getElementById('tapLes').innerHTML = couunTing;
+    document.write(couunTing);
     // thử dùng vòng lặp While
 
 

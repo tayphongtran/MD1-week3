@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Game đoán số từ 1 - 10</label><br>
+<h1 id="reslut"></h1>
+<button id="btn" onclick="doanso()">đoán xem</button>
+<h1 id="luotchoi"></h1>
+</body>
+</html>
+<script>
+    function doanso() {
+        let random = Math.floor(Math.random()*10)+1;
+        console.log(random)
+        let  count = 3
+        document.getElementById('btn').innerHTML = 'choi tiep'
+        while (count > 0) {
+            let  number = +prompt('nhập số yêu thích của bạn: ');
+            if (number == random) {
+                document.getElementById('reslut').innerHTML = 'bạn đoán trúng rồi! tuyệt vời :)'
+                document.getElementById('btn').innerHTML = 'chơi lại'
+                document.getElementById('luotchoi').innerHTML = ' ';
+                count = 3;
+                return;
+            }else {
+                count--;
+                if (number < random) {
+                    alert('sô chọn của bạn đang nhỏ hơn');
+
+                }else {
+                    alert('số chọn của bạn đang lớn hơn')
+                }
+            }
+            alert('số lượt chơi còn lại' +count)
+            if (count ==0) {
+                count = 3;
+                document.getElementById('luotchoi').innerHTML = 'bạn hết lượt rồi';
+                document.getElementById('btn').innerHTML = ' chơi lại'
+                break
+            }
+        }
+    }
+
+</script>

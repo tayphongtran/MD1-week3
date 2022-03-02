@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+<!--    bài 1 in dãy fibonacy bất kỳ-->
+    // let  a1 = 0, a2 = 1, convert;
+    //
+    // console.log('Fibonacy:');
+    // for (let  i = 0; i <= 20; i++) {
+    //     console.log(a1);
+    //     convert = a1 + a2;
+    //     a1 = a2;
+    //     a2 = convert;
+    //     document.write(convert + '<br>')
+    // }
+//    bài 2: Tính giai thừa của một số nguyên dương
+// let  i,N;
+// let a = 1;
+// N = +prompt('nhập số lũy thừa :')
+// for (  i = 1 ; i <= N ; i++) {
+//     a = a*i
+// }
+//
+// document.write(N +'! = '+a)
+
+// bài3
+// let N = +prompt('Nhap gia tri N')
+// //Chuyen kieu du lieu cua N tu string toi int
+// // N = parseInt(N)
+// //xay dung do cao cua hinh tam giac
+// for(i=0;i<N;i++) {
+//     //tao hang (row) *
+//     for(j=0;j<=i;j--) {
+//         console.log(j)
+//         document.writeln(" * ")
+//     }
+//
+//     //xuong dong khi hien thi ket qua cua tung hang
+//     document.writeln("<br/>")
+// }
+
+// for (let  i = 1; i <= 5 ; i++) {
+//     for (let j = 1; j <= 5; j++) {
+//         if ((i==5 && j==5) || (i==4 && j==4) || (i==3&&j==3)|| (i==2&&j==2)||(i==1&&j==0)){
+//             document.write( ' * ')
+//         }
+//     }
+//     document.write('<br>')
+// }
+
+// Bài 5: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.
+money = +prompt('nhập số tiền bạn đã vay : ')
+const n = 0.12
+for (let i = 1; i < 12; i++) {
+    let T = money*(n + 1)/12
+    document.write('số tiền lãi phải trả hàng tháng là ' + T + '<br>');
+
+}
+
+
+
+</script>

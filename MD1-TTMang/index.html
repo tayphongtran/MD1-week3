@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="value">
+<input type="button" id="btnAdd" value="Add" onclick="add_elemen_arr()">
+<input type="button" id=" btnDisplay" value="Display" onclick="display_arr()">
+<div id="result">
+
+</div>
+</body>
+</html>
+<script>
+let x = 0
+let arr = [];
+function add_elemen_arr() {
+    arr[x] = document.getElementById('value').value;
+    x++
+    document.getElementById('value').value = " ";
+}
+function display_arr() {
+    let e = "<hr/>"
+    for (let  i = 0; i < arr.length ; i++) {
+        e += "element" + i + " = " + arr[i] + '<br/>';
+    }
+    document.getElementById('result').innerHTML = e;
+    console.log(e)
+}
+</script>

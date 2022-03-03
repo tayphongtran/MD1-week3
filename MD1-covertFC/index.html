@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Fahrenheit :</p>
+<input type="number" id="add">
+<button onclick="clickbtn()"> Convert</button>
+<p>Celsius: <span id="addNew">Celsius:</span></p>
+</body>
+</html>
+<script>
+    function clickbtn() {
+        c = +document.getElementById('add').value;
+        d  = (c - 32) / 1.8;
+        document.getElementById('addNew').innerHTML = +d;
+    }
+</script>

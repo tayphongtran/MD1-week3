@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="add"></h1>
+</body>
+</html>
+<script>
+    // myColor = ["Red", "Green", "White", "Black"];
+    // console.log(myColor.toString());
+    // console.log(myColor.join());
+    // console.log(myColor.join('+'));
+    // document.getElementById('add').innerHTML = myColor.toString();
+
+    // let num = prompt('nhập vào dãy số');
+    // let result = [num[0]];
+    // console.log(result)
+    // for (let x = 1; x < num.length; x++) {
+    //     if (num[x - 1] % 2 == 0 && num[x] % 2 == 0) {
+    //         console.log('vao if với x = ', x)
+    //         result.push('-', num[x]);
+    //         console.log('result sau khi push ', result)
+    //     } else {
+    //         result.push(num[x]);
+    //     }
+    // }
+    // console.log(result.join(''));
+
+
+    // let str = 'c';
+    // let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    // let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    // let result = [];
+    //
+    // for(let x=0; x<str.length; x++)
+    // {
+    //     if(UPPER.indexOf(str[x]) !== -1)
+    //     {
+    //         result.push(str[x].toLowerCase());
+    //     }
+    //     else if(LOWER.indexOf(str[x]) !== -1)
+    //     {
+    //         result.push(str[x].toUpperCase());
+    //     }
+    //     else
+    //     {
+    //         result.push(str[x]);
+    //     }
+    // }
+    // console.log(result.join(''));
+
+    let str = 'The Quick Brown Fox99';
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+
+    for(var x=0; x<str.length; x++)
+    {
+        if(UPPER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toLowerCase());
+        }
+        else if(LOWER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toUpperCase());
+        }
+        else
+        {
+            console.log('check x  ', x)
+            result.push(str[x]);
+
+        }
+    }
+    console.log(result.join(''));
+    console.log('check =====',UPPER.indexOf('T'))
+</script>

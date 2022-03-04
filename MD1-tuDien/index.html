@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let VietNamess = ["Bướm","Chym","Chó"];
+    let engLish = ["Butterfly","Bird","Dog"];
+    let Nhap = prompt('nhập vào từ tiếng anh cần dịch : ');
+    let position = engLish.indexOf(Nhap.toLowerCase());
+    if (position ==-1) {
+        alert('Từ cần tìm không có  đâu ')
+    }else {
+        alert(VietNamess[position])
+    }
+    engLish.toLowerCase()
+
+</script>

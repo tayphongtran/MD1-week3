@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        textarea {
+            width: 500px;
+            height: 500px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body onload="tinh()">
+<textarea id="reset"></textarea>
+</body>
+</html>
+<script>
+    let a = " Anh Tây đẹp trai!!! ";
+    let arr = [];
+    arr = a.split('');
+    let str = "";
+    console.log('result',arr)
+    function tinh() {
+        let text = document.getElementById('reset').value;
+        for (i =1; i <= text.length; i++) {
+            str = str + arr[i]
+            if (i == 21) {
+                str = '';
+            }
+        }
+        document.getElementById('reset').value = str;
+        str = '';
+        setTimeout(tinh,100)
+    }
+</script>

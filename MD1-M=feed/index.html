@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button {
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <input id="dataChange" type="number" value="">
+    <select id="m" onchange="conVert()">
+        <option value="met">mét</option>
+        <option value="fizz">Fizz</option>
+    </select>
+    <button onclick="conVert()">=</button>
+    <select id="f" onchange="conVert()">
+        <option value="fizz">Fizz</option>
+        <option value="met">mét</option>
+    </select>
+</table>
+<h1 id="presently" ></h1>
+</body>
+</html>
+<script>
+    function conVert() {
+        let enterData = document.getElementById('dataChange').value;
+        let m = document.getElementById('m').value;
+        let f = document.getElementById('f').value;
+        let presently;
+        if (m === 'met') {
+            if (f === 'met') {
+                presently = enterData
+            } else {
+                presently = 3.279 * enterData
+            }
+        } else {
+            if (f === 'met') {
+                presently = 0.305 * enterData
+            } else {
+                presently = enterData
+            }
+        }
+        document.getElementById('presently').innerText = 'kết quả : ' + presently;
+    }
+
+</script>

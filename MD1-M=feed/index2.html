@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    table {
+
+      width: 350px;
+      height: 50px;
+    }
+
+  </style>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Amount</th>
+    <th>From Currency</th>
+    <th>To Currency</th>
+
+  </tr>
+  <tr>
+    <td>
+      <select id="s1" onchange="convert()">
+        <option value="vn">VietNam</option>
+        <option value="usd">USD</option>
+      </select>
+    </td>
+    <td><input id="numberOnchange" type="number" value="convert"></td>
+
+    <td>
+      <select id="s2" onchange="convert()">
+        <option value="vn">VietNam</option>
+        <option value="usd">USD</option>
+      </select>
+    </td>
+    <td><button type="button" onclick="convert()" value="">Covert</button></td>
+  </tr>
+</table>
+<h1 id="result"></h1>
+</body>
+<script>
+  function  convert() {
+    let input = document.getElementById('numberOnchange').value;
+    let s1 = document.getElementById('s1').value;
+    let s2 = document.getElementById('s2').value;
+    let result;
+    if (s1==='usd'){
+      if (s2 === 'usd') {
+        result = input
+      }else {
+        result = input*23000
+      }
+    }else {
+      if (s2 === 'usd') {
+        result = input/23000
+      }else  {
+        result = input
+      }
+    }
+    document.getElementById('result').innerHTML = result
+  }
+</script>
+</html>
